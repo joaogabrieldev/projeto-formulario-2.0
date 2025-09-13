@@ -134,7 +134,7 @@ projeto-formulario-pesquisa/
 
 2. **Navegue até o diretório**
    ```bash
-   cd projeto-formulario-pesquisa
+   cd projeto-formulario-2.0
    ```
 
 3. **Abra o arquivo principal**
