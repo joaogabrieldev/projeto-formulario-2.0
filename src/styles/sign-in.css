@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+:root {
+  --border-width: 1.8px;
+}
+
+.container-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  max-width: 100%;
+  overflow: hidden;
+  width: 425px;
+  height: 500px;
+
+  padding: 20px;
+
+  background-color: #3d6aff;
+
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.div-input-email {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.div-input-email > label {
+  text-align: start;
+  margin-bottom: 6px;
+  color: white;
+}
+
+.subdiv-input-email {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+#input-email {
+  padding: 4.1px;
+  font-size: 15px;
+  border-bottom-left-radius: 6px;
+  border-top-left-radius: 6px;
+  outline: none;
+  border: var(--border-width) solid black;
+  width: 225px;
+  color: white;
+}
+
+#select-email-ext {
+  padding: 3.1px;
+  font-size: 15px;
+  border-bottom-right-radius: 6px;
+  border-top-right-radius: 6px;
+  text-align: center;
+  outline: none;
+  border: var(--border-width) solid black;
+  border-left: transparent;
+  transition: all 0.2s cubic-bezier(0.11, 0.8, 0.37, 0.95);
+}
+
+.div-input-pass {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-direction: column;
+
+  /* background-color: blue; */
+}
+
+.div-input-pass > label {
+  text-align: start;
+  margin-bottom: 6px;
+  color: white;
+}
+
+.subdiv-input-pass {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.subdiv-input-pass > #input-pass {
+  margin-right: 8px;
+}
+
+#input-pass {
+  padding: 4px;
+  font-size: 16px;
+  border-radius: 6px;
+  outline: none;
+  border: var(--border-width) solid #000000;
+  width: 323px;
+  transition: all 0.2s cubic-bezier(0.11, 0.8, 0.37, 0.95);
+  color: white;
+}
+
+#input-email:focus,
+#input-pass:focus {
+  border-color: white;
+  transition: all 0.2s cubic-bezier(0.11, 0.8, 0.37, 0.95);
+  color: white;
+}
+
+#select-email-ext:focus {
+  border-color: white;
+  transition: all 0.2s cubic-bezier(0.11, 0.8, 0.37, 0.95);
+}
+
+#link-sign-in {
+  color: white;
+  transition: font-size 0.3s cubic-bezier(0.11, 0.8, 0.37, 0.95);
+  cursor: pointer;
+}
+
+#link-sign-in:hover {
+  font-size: 16.25px;
+}

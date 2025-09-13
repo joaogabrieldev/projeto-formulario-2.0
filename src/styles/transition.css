@@ -1,0 +1,68 @@
+@keyframes opacity-out {
+  0% {
+    opacity: 100%;
+  }
+
+  100% {
+    opacity: 0%;
+  }
+}
+
+@keyframes opacity-in {
+  0% {
+    opacity: 0%;
+  }
+
+  100% {
+    opacity: 100%;
+  }
+}
+
+#div-hidden-block {
+  display: flex;
+  background-color: red;
+  transform: translateX(697.6px);
+  z-index: 1000;
+  transition: transform 0.6s cubic-bezier(0.12, 0.53, 0.54, 0.94);
+}
+
+#hidden-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-color: #3d6aff;
+  border: 1px solid #3d6aff;
+  width: 465.2px;
+  height: 538px;
+  z-index: 1000;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.5s cubic-bezier(0.12, 0.53, 0.54, 0.94);
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+#hidden-block.state-login {
+  animation: border-radius-animation-cadastro 0.5s
+    cubic-bezier(0.12, 0.53, 0.54, 0.94);
+  transition: all 0.5s cubic-bezier(0.12, 0.53, 0.54, 0.94);
+}
+
+#hidden-block.state-cadastro {
+  animation: border-radius-animation-login 0.5s
+    cubic-bezier(0.12, 0.53, 0.54, 0.94);
+  transition: all 0.5s cubic-bezier(0.12, 0.53, 0.54, 0.94);
+
+}
+
+#player-a,
+#player-b {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.3s cubic-bezier(0.12, 0.53, 0.54, 0.94);
+}

@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+:root {
+  --radio-size: 15px;
+
+  --radio-label-size: 15px;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+}
+
+* {
+  font-family: "Inter";
+}
+
+.div-input-sexo {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #4c8bf5;
+  font-weight: bold;
+}
+
+.radio-button-container {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.radio-button {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.radio-button__input {
+  display: none;
+}
+
+.radio-button__label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  font-size: var(--radio-label-size);
+  color: #3d6aff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.radio-button__custom {
+  width: var(--radio-size);
+  height: var(--radio-size);
+  border-radius: 50%;
+  border: 2px solid #3d6aff;
+  transition: all 0.3s ease;
+}
+
+.radio-button__input:checked + .radio-button__label .radio-button__custom {
+  background-color: #4c8bf5;
+  border-color: transparent;
+  transform: scale(0.8);
+  box-shadow: 0 0 20px #4c8bf580;
+}
+
+.radio-button__input:checked + .radio-button__label {
+  color: #4c8bf5;
+}
+
+.radio-button__label:hover .radio-button__custom {
+  transform: scale(1.2);
+  border-color: #4c8bf5;
+  box-shadow: 0 0 20px #4c8bf580;
+}
+
+.radio-button__custom + .radio-button__label {
+  display: flex;
+  flex-direction: row;
+}

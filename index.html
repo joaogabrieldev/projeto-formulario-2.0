@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="src/styles/radio-buttons.css">
+    <link rel="stylesheet" href="src/styles/sign-up.css">
+    <link rel="stylesheet" href="src/styles/sign-in.css">
+    <link rel="stylesheet" href="src/styles/global.css">
+    <link rel="stylesheet" href="src/styles/button-submit.css">
+    <link rel="stylesheet" href="src/styles/transition.css">
+    <link rel="stylesheet" href="src/styles/pattern.css">
+
+    <script src="src/scripts/global.js"></script>
+    <script src="src/scripts/transition.js"></script>
+</head>
+
+<body id="body-app">
+    <div class="container-global">
+        <div class="container-master" id="container-master">
+            <div id="div-hidden-block">
+                <div id="hidden-block" class="state-login">
+                    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                    <lottie-player id="player-a" background="transparent" autoplay speed="1" style="opacity: 1;"
+                        loop></lottie-player>
+                    <lottie-player id="player-b" background="transparent" speed="1" style="opacity: 0;"
+                        loop></lottie-player>
+                </div>
+            </div>
+            <!-- Login -->
+            <div class="container-login" id="container-login">
+                <script src="src/scripts/sign-in.js"></script>
+                <form autocomplete="on">
+                    <div class="div-input-email">
+                        <label for="input-email">Email: </label>
+                        <div class="subdiv-input-email">
+                            <input type="text" id="input-email" autocorrect="off" autocomplete="email">
+                            <select name="" id="select-email-ext">
+                                <option value="gmail">@gmail.com</option>
+                                <option value="hotmail">@hotmail.com</option>
+                                <option value="yahoo">@yahoo.com</option>
+                                <option value="outlook">@outlook.com</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="div-input-pass">
+                        <label for="input-pass">Senha: </label>
+                        <div class="subdiv-input-pass">
+                            <input type="password" name="" id="input-pass">
+                            <img src="src/assets/icons/eye.svg" class="class-icone" id="icone-olho-pass" alt="">
+                        </div>
+                    </div>
+                    <div class="button-submit">
+                        <button type="submit" id="input-submit-in">
+                            Entrar!
+                        </button>
+                    </div>
+                    <div class="div-link">
+                        <a id="link-sign-in">Não tenho conta ainda. Criar conta!</a>
+                    </div>
+                </form>
+            </div>
+            <!-- Cadastro -->
+            <div class="container-sign-up" id="container-sign-up">
+                <script src="src/scripts/sign-up.js"></script>
+                <form>
+                    <div class="div-input-email-up">
+                        <label for="input-email-up">Email: </label>
+                        <div class="subdiv-input-email-up">
+                            <input type="text" id="input-email-up" autocorrect="off">
+                            <select name="" id="select-email-ext-up">
+                                <option value="gmail">@gmail.com</option>
+                                <option value="hotmail">@hotmail.com</option>
+                                <option value="yahoo">@yahoo.com</option>
+                                <option value="outlook">@outlook.com</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="div-input-pass-up">
+                        <label for="input-pass-up">Senha: </label>
+                        <div class="subdiv-input-pass-up">
+                            <input type="password" name="" id="input-pass-up">
+                            <img src="src/assets/icons/eye.svg" class="class-icone-olho-up" id="icone-olho-pass-up" alt="">
+                        </div>
+                    </div>
+                    <div class="div-input-confirm-pass-up">
+                        <label for="input-confirm-pass-up">Confirmar Senha: </label>
+                        <div class="subdiv-input-confirm-pass-up">
+                            <input type="password" name="" id="input-confirm-pass-up" class="inputs-password-confirm">
+                            <img src="src/assets/icons/eye.svg" class="class-icone-olho" id="icone-olho-confirm-pass-up"
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="div-input-numero-up">
+                        <label for="input-numero-up">Telefone: </label>
+                        <input type="text" id="input-numero-up" inputmode="numeric" pattern="\d{10,14}" maxlength="14"
+                            required autocomplete="tel">
+                    </div>
+                    <div class="div-input-sexo">
+                        <div class="radio-button-container">
+                            <label for="radio-button-id">Sexo: </label>
+                            <div class="radio-button" id="radio-button-id">
+                                <input type="radio" class="radio-button__input" id="radio1" name="radio-group">
+                                <label class="radio-button__label" for="radio1">
+                                    <span class="radio-button__custom"></span>
+                                    Masculino
+                                </label>
+                            </div>
+                            <div class="radio-button">
+                                <input type="radio" class="radio-button__input" id="radio2" name="radio-group">
+                                <label class="radio-button__label" for="radio2">
+                                    <span class="radio-button__custom"></span>
+                                    Feminino
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="button-submit">
+                        <button type="submit" id="input-submit-up">
+                            Ir para o Login
+                        </button>
+                    </div>
+                    <div class="div-link">
+                        <a id="link-sign-up">Já tenho uma conta. Fazer Login!</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="src/scripts/index.js"></script>
+</body>
+
+</html>

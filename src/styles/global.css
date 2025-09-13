@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+html,
+body {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+@keyframes opacity-out {
+  0% {
+    opacity: 100%;
+  }
+
+  100% {
+    opacity: 0%;
+  }
+}
+
+@keyframes opacity-in {
+  0% {
+    opacity: 0%;
+  }
+
+  100% {
+    opacity: 100%;
+  }
+}
+
+.container-master {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: row;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+
+  min-width: 100%;
+
+ 
+}
+
+input {
+  background-color: transparent;
+}
+
+select {
+  background-color: #efefef;
+  color: black;
+  background-image: url();
+}
+
+.button-submit {
+  /* background-color: green; */
+  margin-top: 22px;
+}
+
+.div-link {
+  /* background-color: yellow; */
+  margin-top: 7px;
+  text-align: start;
+}
+
+.class-icone {
+  color: white;
+}
+
+input[type="text"],
+input[type="password"] {
+  text-indent: 10px;
+}
