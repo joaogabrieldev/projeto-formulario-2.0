@@ -11,8 +11,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const hiddenBlockDiv = document.getElementById("div-hidden-block");
 
   const containerMaster = document.getElementById("container-master");
-  const ladoAsombra = document.getElementById("container-login");
-  const ladoBsombra = document.getElementById("container-sign-up");
 
   const body = document.getElementById("body-app");
 
@@ -83,6 +81,26 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Link na Página Cadastro
   document.getElementById("link-sign-up").addEventListener("click", () => {
+    hiddenBlockDiv.style.transform = "translateX(697.6px)";
+    hiddenBlock.style.backgroundColor = "#3d6aff";
+    hiddenBlock.style.border = "1px solid #3d6aff";
+
+    // Right Radius
+    hiddenBlock.style.borderTopRightRadius = "20px";
+    hiddenBlock.style.borderBottomRightRadius = "20px";
+
+    // Left Radius
+    hiddenBlock.style.borderTopLeftRadius = "0px";
+    hiddenBlock.style.borderBottomLeftRadius = "0px";
+
+    trocarCor(urlCorBranca, isPlayerA);
+
+    body.classList.toggle("state-cadastro");
+
+    containerMaster.style.filter = "drop-shadow(0px 0px 85px #ffffffbf)";
+  });
+
+  document.getElementById("input-submit-up").addEventListener("click", () => {
     hiddenBlockDiv.style.transform = "translateX(697.6px)";
     hiddenBlock.style.backgroundColor = "#3d6aff";
     hiddenBlock.style.border = "1px solid #3d6aff";
