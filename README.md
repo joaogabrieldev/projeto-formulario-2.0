@@ -12,8 +12,6 @@
 
 </div>
 
----
-
 ## 🚀 Teste Agora!
 
 <div align="center">
