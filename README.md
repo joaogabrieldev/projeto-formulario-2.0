@@ -159,15 +159,6 @@ O projeto foi desenvolvido com foco na responsividade, adaptando-se a diferentes
 
 ---
 
-## 🔮 Próximas Funcionalidades
-
-- [ ] Integração com backend para persistência de dados
-- [ ] Validação de email com regex mais robusta
-- [ ] Sistema de recuperação de senha
-- [ ] Testes automatizados
-
----
-
 ## 👨‍💻 Desenvolvedor
 
 <div align="center">
