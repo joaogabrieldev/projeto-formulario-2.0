@@ -125,32 +125,6 @@ projeto-formulario-pesquisa/
 
 ---
 
-## 🚀 Como Executar
-
-1. **Clone o repositório**
-   ```bash
-   git clone https://github.com/joaogabrieldev/projeto-formulario-pesquisa.git
-   ```
-
-2. **Navegue até o diretório**
-   ```bash
-   cd projeto-formulario-2.0
-   ```
-
-3. **Abra o arquivo principal**
-   ```bash
-   # Abra o index.html em seu navegador
-   # ou use um servidor local
-   python -m http.server 8000
-   ```
-
-4. **Acesse no navegador**
-   ```
-   http://localhost:8000
-   ```
-
----
-
 ## 📱 Responsividade
 
 O projeto foi desenvolvido com foco na responsividade, adaptando-se a diferentes tamanhos de tela:
