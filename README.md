@@ -42,7 +42,7 @@ Um formulário de pesquisa moderno e interativo desenvolvido com **HTML5**, **CS
 ### Bibliotecas e Recursos
 <img src="https://cdn.simpleicons.org/lottiefiles/00D4AA" width="50" height="50" alt="Lottie"/>
 <img src="https://cdn.simpleicons.org/lucide/000000" width="50" height="50" alt="Lucide"/>
-<img src="https://cdn.simpleicons.org/uiverse/00C4CC" width="50" height="50" alt="UIverse"/>
+<!-- <img src="https://cdn.simpleicons.org/uiverse/00C4CC" width="50" height="50" alt="UIverse"/> -->
 
 </div>
 
