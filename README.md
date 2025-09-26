@@ -14,6 +14,18 @@
 
 ---
 
+## 🚀 Teste Agora!
+
+<div align="center">
+
+![Vercel](https://img.shields.io/badge/Deploy-Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
+
+#### 👑 **Deploy do Projeto:** [Clique Aqui](https://projeto-formulario-2-0.vercel.app/)
+
+</div>
+
+---
+
 ## 🎯 Sobre o Projeto
 
 Um formulário de pesquisa moderno e interativo desenvolvido com **HTML5**, **CSS3** e **JavaScript vanilla**. O projeto apresenta uma interface elegante com transições suaves entre as telas de login e cadastro, utilizando animações Lottie para criar uma experiência visual envolvente.
